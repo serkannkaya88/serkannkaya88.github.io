@@ -1,0 +1,8 @@
+{
+  "ios": {
+    "latest": "1.0.1",
+    "min": "1.0.1",
+    "force": false,
+    "message": "Yeni özellikler ve düzeltmeler! Lütfen güncelleyin."
+  }
+}
