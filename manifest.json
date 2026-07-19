@@ -1,8 +1,8 @@
 {
   "ios": {
-    "latest": "1.5.0",
+    "latest": "2.0.0",
     "min": "1.0.1",
     "force": false,
-    "message": "Yeni özellikler ve düzeltmeler! Lütfen güncelleyin."
+    "message": "Lunapark Macerası geldi! 80 yeni seviye, yeni oyun modu ve çok daha fazlası. Hemen güncelle!"
   }
 }
