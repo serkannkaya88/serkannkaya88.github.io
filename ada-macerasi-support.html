@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ada Macerasi (Popfair) - Support</title>
+<style>
+  :root { --bg:#faf9fc; --card:#ffffff; --ink:#1f1633; --muted:#6b6480; --accent:#7B1FA2; --line:#eae6f2; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; line-height:1.65; }
+  .wrap { max-width:780px; margin:0 auto; padding:32px 20px 64px; }
+  header { text-align:center; padding:28px 0 8px; }
+  header h1 { font-size:1.6rem; margin:0 0 6px; color:var(--accent); }
+  header .sub { color:var(--muted); font-size:.95rem; }
+  .tabs { display:flex; gap:8px; justify-content:center; margin:20px 0 8px; }
+  .tabs button { border:1px solid var(--line); background:var(--card); color:var(--ink);
+    padding:8px 18px; border-radius:999px; font-size:.95rem; cursor:pointer; font-weight:600; }
+  .tabs button.active { background:var(--accent); color:#fff; border-color:var(--accent); }
+  .doc { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:26px 26px 30px; margin-top:14px; }
+  .doc h2 { font-size:1.05rem; margin:22px 0 6px; }
+  .doc h2:first-child { margin-top:4px; }
+  .doc p, .doc li { color:#2c2440; font-size:.98rem; }
+  .doc ul { padding-left:20px; }
+  .doc li { margin:7px 0; }
+  .contact { text-align:center; background:#f3edfa; border:1px solid var(--line); border-radius:14px; padding:18px; margin-top:16px; }
+  .contact a { font-weight:700; font-size:1.05rem; }
+  a { color:var(--accent); word-break:break-word; }
+  .hidden { display:none; }
+  footer { text-align:center; color:var(--muted); font-size:.85rem; margin-top:26px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Ada Macerasi (Popfair)</h1>
+    <div class="sub">Support &middot; Destek</div>
+  </header>
+
+  <div class="tabs">
+    <button id="btn-en" class="active" onclick="show('en')">English</button>
+    <button id="btn-tr" onclick="show('tr')">Turkce</button>
+  </div>
+
+  <div id="en" class="doc">
+    <h2>Need help?</h2>
+    <p>Ada Macerasi (Popfair) is a family-friendly match-3 puzzle game. If you have a question, problem, or feedback, we are happy to help.</p>
+
+    <div class="contact">
+      Contact us:<br>
+      <a href="mailto:serkannkaya88@outlook.com">serkannkaya88@outlook.com</a>
+    </div>
+
+    <h2>Frequently Asked Questions</h2>
+    <ul>
+      <li><b>How do I change the hero or sibling names?</b> Open Settings inside the game and edit the names anytime.</li>
+      <li><b>I ran out of lives.</b> Lives refill automatically over time. You can also receive lives as gifts from friends.</li>
+      <li><b>How do friends and the leaderboard work?</b> Each player gets a share code. Add friends by code to send lives or coins and to appear on the weekly leaderboard. No account or email is required.</li>
+      <li><b>How do I turn notifications on or off?</b> Manage them from your device Settings under Notifications.</li>
+      <li><b>Do I need to create an account?</b> No. You can play without any login. Your progress is saved on your device.</li>
+      <li><b>I found a bug or have a suggestion.</b> Please email us with your device model and iOS version so we can help quickly.</li>
+    </ul>
+  </div>
+
+  <div id="tr" class="doc hidden">
+    <h2>Yardima mi ihtiyacin var?</h2>
+    <p>Ada Macerasi (Popfair) aile dostu bir eslestirme (match-3) bulmaca oyunudur. Bir sorun, soru veya geri bildirimin varsa yardimci olmaktan memnuniyet duyariz.</p>
+
+    <div class="contact">
+      Bize ulasin:<br>
+      <a href="mailto:serkannkaya88@outlook.com">serkannkaya88@outlook.com</a>
+    </div>
+
+    <h2>Sik Sorulan Sorular</h2>
+    <ul>
+      <li><b>Kahraman veya kardes ismini nasil degistiririm?</b> Oyun icindeki Ayarlar bolumunden isimleri istedigin zaman duzenleyebilirsin.</li>
+      <li><b>Canim bitti.</b> Canlar zamanla otomatik dolar. Ayrica arkadaslarindan hediye can da alabilirsin.</li>
+      <li><b>Arkadaslar ve lider tablosu nasil calisir?</b> Her oyuncunun bir paylasim kodu vardir. Kodla arkadas ekleyip can veya coin gonderebilir, haftalik lider tablosunda yer alabilirsin. Hesap veya e-posta gerekmez.</li>
+      <li><b>Bildirimleri nasil acar/kapatirim?</b> Cihazinin Ayarlar > Bildirimler bolumunden yonetebilirsin.</li>
+      <li><b>Hesap acmam gerekiyor mu?</b> Hayir. Girise gerek olmadan oynayabilirsin. Ilerlemen cihazinda saklanir.</li>
+      <li><b>Bir hata buldum veya onerim var.</b> Cihaz modelini ve iOS surumunu belirterek bize e-posta gonderirsen hizlica yardimci oluruz.</li>
+    </ul>
+  </div>
+
+  <footer>&copy; 2026 Serkan Kaya &middot; Ada Macerasi (Popfair)</footer>
+</div>
+
+<script>
+  function show(lang){
+    document.getElementById('en').classList.toggle('hidden', lang!=='en');
+    document.getElementById('tr').classList.toggle('hidden', lang!=='tr');
+    document.getElementById('btn-en').classList.toggle('active', lang==='en');
+    document.getElementById('btn-tr').classList.toggle('active', lang==='tr');
+    document.documentElement.lang = lang;
+  }
+</script>
+</body>
+</html>
